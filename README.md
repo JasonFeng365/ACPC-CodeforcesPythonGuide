@@ -16,11 +16,9 @@ import sys
 sys.setrecursionlimit(10**5) # Arbitrary limit...
 ```
 
-<div style="page-break-after: always;"></div>
-
 However, because Codeforces hates Python users, this does not work for the platform. If the recursion limit is reached, Codeforces will judge that submission as a **runtime error**. If your code uses recursion and inexplicably results in runtime errors, we encourage you to check that your recursion does not go over the limit of $1000$ calls.
 
-If you must write a recursive function that goes over this amount, we provide a template that you may freely copy-paste to use within your submissions. This template is sourced from Codeforces user [ibalram](https://codeforces.com/profile/ibalram), from a comment on [a blog post](https://codeforces.com/blog/entry/80158). To use it, simply copy the code below and paste it at the start of your solution file:
+If you must write a recursive function that goes over this amount, we provide a template that you may freely copy-paste to use within your submissions. This template is sourced from Codeforces user [ibalram](https://codeforces.com/profile/ibalram), from a comment on [a blog post](https://codeforces.com/blog/entry/80158). To use it, simply copy the code below and paste it at the start of your solution file. The code is also provided under [recursion.py](https://github.com/JasonFeng365/ACPC-CodeforcesPythonGuide/blob/main/recursion.py) and each of the two sample usage files.
 
 ```py
 from types import GeneratorType
@@ -48,8 +46,7 @@ This function makes a custom `@bootstrap` **decorator** that allows you to conve
 
 **Note:** on PyPy, this runs about twice as slowly as vanilla recursion; however, every ACPC problem has been tested on Python, and if recursion is required for the solution, PyPy boostrapping will fall within the constraints and should not exceed the time limit.
 
-<div style="page-break-after: always;"></div>
-
+Sample code from [sample_printLine.py](https://github.com/JasonFeng365/ACPC-CodeforcesPythonGuide/blob/main/sample_printLine.py)
 ```py
 def printLine(times):
 	if times>0:
@@ -68,6 +65,7 @@ printLine(3)			# -> Hello! Hello! Hello!
 bootstrappedPrintLine(3)	# -> World! World! World!
 ```
 
+Sample code from [sample_getMax.py](https://github.com/JasonFeng365/ACPC-CodeforcesPythonGuide/blob/main/sample_getMax.py)
 ```py
 arr = [2, 4, 3, 5, 1]
 
