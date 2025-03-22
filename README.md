@@ -46,6 +46,8 @@ This function makes a custom `@bootstrap` **decorator** that allows you to conve
 
 **Note:** on PyPy, this runs about twice as slowly as vanilla recursion; however, every ACPC problem has been tested on Python, and if recursion is required for the solution, PyPy boostrapping will fall within the constraints and should not exceed the time limit.
 
+**Note:** this decorator does not seem to be compatible with `@cache`. You will either have to implement that yourself if you decide to use `@bootstrap`, or have some way to get around the recursion limit of $1000$ to avoid using `@bootstrap`.
+
 Sample code from [sample_printLine.py](https://github.com/JasonFeng365/ACPC-CodeforcesPythonGuide/blob/main/sample_printLine.py)
 ```py
 def printLine(times):
