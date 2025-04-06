@@ -1,10 +1,8 @@
 ## ACPC Guide for using PyPy on Codeforces
 
-**Because Codeforces Stinks for Python Users**
-
 ---
 
-Python and Codeforces mix like water and oil: I wouldn't survive three days without one, but I wouldn't mind just setting the other one on fire and watching it burn. As most Codeforces users primarily use C++, many problems on the platform are friendly to C++, with constraints that its raw speed are able to handle. However, Python is significantly slower than C++, and the same logic that works in C++ may not pass in time in Python - segment trees are notorious for this. Fortunately, **Jason** is on the ACPC team, and has been continuously yelling at his teammates to set constraints that are passable in PyPy, a fast Python runtime, with the same logic as C++.
+As most Codeforces users primarily use C++, many problems on the platform are friendly to C++, with constraints that its raw speed are able to handle. However, Python is significantly slower than C++, and the same logic that works in C++ may not pass in time in Python - segment trees are notorious for this. All ACPC problem have constraints that are passable in PyPy, a fast Python runtime, with the same logic as C++.
 
 Python users are encouraged to submit code with **PyPy**. This is a more optimized Python runtime that, in almost all cases, provides a free speedup to your code. You may also want to [download PyPy to your own system](https://pypy.org/download.html).
 
